@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Color Scheme Switcher</title>
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+  <ul id="switcher">
+  <li id="grayButton"></li>
+  <li id="whiteButton"></li>
+</ul>
+
+<h1>Color Scheme Switcher</h1>
+
+<p id="para">Try clicking on one of the colors above to change the colors on this page!</p>
+
+<p class="square">Try clicking on one of the colors above to change the colors on this page!</p>
+<p class="square">Try clicking on one of the colors above to change the colors on this page!</p>
+
+<h3>Menu Tonight</h3>
+<ul>
+	<li class="meat">Steak</li>
+	<li class="noMeat">fruit salad</li>
+	<li class="noMeat">tofurkey</li>
+	<li class="meat">pork chops</li>
+</ul>
+  <!-- <script src="js/index.js"></script> -->
+<script>
+  	
+// var age= prompt("what is your age?");
+// document.write("your age is " + age);
+// console.log("why are you only " + age)
+// alert("your stupid alert age is " + age)
+document.getElementById("para").innerHTML = "i like cows";
+// document.getElementById("demo").innerHTML = "Hello World";
+
+var plass= document.getElementsByClassName("square");
+plass.length;
+console.log(plass.length);
+
+plass[0].style.backgroundColor = "lime";
+
+var theBlue= "blue";
+var theRed= "red";
+var theGreen= "green";
+var thePink= "pink";
+
+// document.getElementsByTagName("body").style.backgroundColor= "lime";
+var craig = document.getElementsByTagName("p");
+// var blue= "blue";
+craig[2].style.backgroundColor= theBlue;
+
+// BAR AGE VERIFICATION
+// var age= prompt("what is your age?");
+
+// if (age < 21) {
+// 	document.write("you are too young");
+// }
+// else if (age >= 21) {
+//   document.write("you're old enough!");
+// }
+
+document.write(12%4);
+
+// FIZZBUZZ
+// var number= prompt("input a number");
+// 	// pseudocode:
+// // if remainder = zero when divided by 3, 
+// // 	return fiz;
+
+// // if remainder = zero when divided by 5, 
+// // 	return buzz;
+
+// if (number%3==0) {
+// 	document.write("Fizz");
+// }
+// if (number%5==0) {
+// 	document.write("Buzz");
+// }
+
+// THE VEGAN TEST
+
+// select elements by class, if class is "meat"
+// if menu item = has meat, then say "vegans beware!";
+
+// if menu item does not = has meat, then say "vegan friendly";
+
+var menuItem = document.getElementsByTagName("li");
+var vegan = document.getElementsByClassName("noMeat");
+var notVegan = document.getElementsByClassName("meat");
+
+if (menuItem == vegan) {
+	document.write("it's vegan");
+}
+
+
+</script>
+
+</body>
+
+</html>
